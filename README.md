@@ -1,5 +1,5 @@
-#**Hello everyone!**:wave:
+# **Hello everyone!**:wave:
 
-##**I am curently working on something _interesting_.**
+## **I am curently working on something _interesting_.**
 
-###<sub>This will be basic js introduction and learning experience.</sub>
+### <sub>This will be basic js introduction and learning experience.</sub>
