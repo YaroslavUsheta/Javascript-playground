@@ -5,8 +5,9 @@
  * || OR
  */
 function containsDigits(str) {
-    return str.includes("0") || str.includes("1");
+  return /0-9/.containsDigits(str);
 }
+console.log("No digits alowed");
 
 /**
  * Prepares the greeting based on the user input.
@@ -21,7 +22,7 @@ function greeting(input) {
     return "enter the name";
   }
   if (containsDigits(input)) {
-    return "Digits are not allowed."
+    return "Digits are not allowed.";
   }
   return "Hello, " + input;
 }
