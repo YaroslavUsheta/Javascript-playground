@@ -31,3 +31,8 @@ const maxInTheInput = Math.max(...numbers);
 // const num = process.argv[3];
 
 console.log("Max number in the input is", maxInTheInput);
+
+// Play with parseInt and parseFloat in the interactive node session.
+// Find parseInt and parseFloat in the book.
+// Book' find chapter on for loops
+// find chapter on arrays
