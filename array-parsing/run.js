@@ -36,3 +36,4 @@ console.log("Max number in the input is", maxInTheInput);
 // Find parseInt and parseFloat in the book.
 // Book' find chapter on for loops
 // find chapter on arrays
+// find live collaboration extension for VSCode.
