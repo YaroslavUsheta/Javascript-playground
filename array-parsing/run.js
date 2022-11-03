@@ -37,3 +37,7 @@ for (let i = 2; i < process.argv.length; i++) {
 // Book' find chapter on for loops
 // find chapter on arrays
 // find live collaboration extension for VSCode.
+
+//Tryed out perseFloat & perseInt, not really getting it.
+//Live coleboration extension in vs code https://learn.microsoft.com/en-us/visualstudio/liveshare/use/install-live-share-visual-studio-code
+//Curently reading a chapter on arrays.
