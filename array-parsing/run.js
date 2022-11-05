@@ -20,7 +20,7 @@ for (let i = 2; i < process.argv.length; i++) {
   // adding process.argv[i] to the end of the array
   numbers.push(numberInTheInput);
   if ((num = NaN)) {
-    return input + "not a number";
+    return input;
   }
 }
 // console.log("After push", numbers);
