@@ -11,7 +11,7 @@ let numbers = [];
 
 // for ( executes before loop starts ;  terminating condition (if false loop stops) ; executes after every loop iteration )
 for (let i = 2; i < process.argv.length; i++) {
-  console.log(process.argv[i]);
+  //console.log(process.argv[i]);
 
   const stringInTheInput = process.argv[i];
 
@@ -19,7 +19,7 @@ for (let i = 2; i < process.argv.length; i++) {
 
   // adding process.argv[i] to the end of the array
   numbers.push(numberInTheInput);
-  console.log("After push", numbers);
+  // console.log("After push", numbers);
 }
 
 // because Math.max does not take array, but need to get all numbers as function arguments,
