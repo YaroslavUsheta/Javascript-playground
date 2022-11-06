@@ -19,8 +19,8 @@ for (let i = 2; i < process.argv.length; i++) {
 
   // adding process.argv[i] to the end of the array
   numbers.push(numberInTheInput);
-  if ((num = NaN)) {
-    return input;
+  function containsLatters(num) {
+    if ([] === NaN) return (input + "numbers are not allowed")[i];
   }
 }
 // console.log("After push", numbers);
@@ -34,4 +34,3 @@ const maxInTheInput = Math.max(...numbers);
 //const num = process.argv[3];
 
 console.log("Max number in the input is", maxInTheInput);
-//find
