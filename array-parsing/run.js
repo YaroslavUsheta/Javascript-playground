@@ -19,7 +19,8 @@ for (let i = 2; i < process.argv.length; i++) {
 
   // adding process.argv[i] to the end of the array
   numbers.push(numberInTheInput);
-  function containsLatters() {
+
+  function containsLatters(num) {
     if ([] === NaN) return (input + "numbers are not allowed")[i];
   }
 }
