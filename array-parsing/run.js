@@ -1,3 +1,10 @@
+function allLetter(numberInTheInput) {
+  if (numberInTheInput.value.match(letters)) {
+    return "Letters are not allowed";
+  }
+}
+process.exit();
+
 // parse numbers and find max
 //console.log(process.argv);
 //console.log(typeof process.argv);
@@ -35,17 +42,16 @@ for (let i = 2; i < process.argv.length; i++) {
   // adding process.argv[i] to the end of the array
   numbers.push(numberInTheInput);
 
-  const maxInTheInput = Math.max(...numbers);
   // function containsLatters(num) {
   // if ([] === NaN) return (input + "numbers are not allowed")[i];
   //}
 }
-console.log("result", numbers);
+//console.log("result", numbers);
 
 // because Math.max does not take array, but need to get all numbers as function arguments,
 // we convert array in that using ... (array destructuring).
-
-process.exit();
+const maxInTheInput = Math.max(...numbers);
+//process.exit();
 //console.log("Numbers", numbers);
 
 //const num = process.argv[3];
