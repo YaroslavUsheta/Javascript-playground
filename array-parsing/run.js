@@ -57,3 +57,9 @@ const maxInTheInput = Math.max(...numbers);
 //const num = process.argv[3];
 
 console.log("Max number in the input is", maxInTheInput);
+//let letters = /^[A-Za-z]+$/;
+//function allLetter(maxInTheInput) {
+//if (maxInTheInput.match(letters)) {
+//return "Letters are not allowed";
+//}
+//}
