@@ -5,7 +5,10 @@ for (let i = 2; i < process.argv.length; i++) {
 
   const numberInTheInput = parseFloat(stringInTheInput);
   if (Number.isNaN(numberInTheInput)) {
-    console.log("Not a number");
+    const message = `Cannot procces input: '${stringInTheInput}' is not a number`;
+
+    console.log(message);
+
     process.exit();
   }
 
