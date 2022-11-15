@@ -10,5 +10,6 @@ const id = {
   firstName: "Scott",
   lastName: "Hanselman",
   Title: "Director of Azure",
+  s,
 };
-console.log(id);
+console.log();

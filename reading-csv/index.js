@@ -5,3 +5,4 @@ const file = await open("./users.csv");
 for await (const line of file.readLines()) {
   console.log(line);
 }
+process.exit();
