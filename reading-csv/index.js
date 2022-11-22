@@ -18,13 +18,13 @@ const users = [];
 //console.log(users[id]);
 console.log(fileContent.split("\n"));
 
-const firstLine = fileContent.split("\n")[1];
+const firstLine = fileContent.split("\n")[0];
 
 console.log("First user");
 
 console.log(firstLine.split(","));
 
-const secondLine = fileContent.split("\n")[2];
+const secondLine = fileContent.split("\n")[1];
 
 //console.log(fileContent.split("\n"));
 
@@ -34,7 +34,7 @@ console.log(secondLine.split(","));
 
 //console.log(fileContent.split("\n"));
 
-const thirdLine = fileContent.split("\n")[3];
+const thirdLine = fileContent.split("\n")[2];
 
 console.log("Third user");
 
