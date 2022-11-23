@@ -11,36 +11,35 @@ const id = 2;
 const users = [];
 
 // for loop that populates the array
-//for (let i = 1; i < lines.length; i++) {
-//console.log(`Running ${i} iteration of the for loop`, lines[i]);
-//}
+for (let i = 2; i < lines.length; i++) {
+  //console.log(`${i}st   list of users`, lines[i]);
+  console.log("list of users by", lines[0]);
+  console.log(fileContent.split("\n"));
 
-//console.log(users[id]);
-console.log(fileContent.split("\n"));
+  const firstLine = fileContent.split("\n")[1];
 
-const firstLine = fileContent.split("\n")[0];
+  console.log("First user");
 
-console.log("First user");
+  console.log(firstLine.split(","));
 
-console.log(firstLine.split(","));
+  const secondLine = fileContent.split("\n")[2];
 
-const secondLine = fileContent.split("\n")[1];
+  //console.log(fileContent.split("\n"));
 
-//console.log(fileContent.split("\n"));
+  console.log("Second user");
 
-console.log("Second user");
+  console.log(secondLine.split(","));
 
-console.log(secondLine.split(","));
+  //console.log(fileContent.split("\n"));
 
-//console.log(fileContent.split("\n"));
+  const thirdLine = fileContent.split("\n")[3];
 
-const thirdLine = fileContent.split("\n")[2];
+  console.log("Third user");
 
-console.log("Third user");
-
-console.log(thirdLine.split(","));
-
+  console.log(thirdLine.split(","));
+}
 use;
+console.log(users[id]);
 
 process.exit();
 /*
