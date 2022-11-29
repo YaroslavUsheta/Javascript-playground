@@ -1,10 +1,17 @@
 const name = "greeting";
-function abc(name) {
-  console.log("Hello " + name);
+
+function abc(str) {
+  console.log("Hello " + str);
 }
+
 abc(name);
 
-function cba(name) {
-  return "Hello " + name;
+abc("a");
+
+abc("tree");
+
+function cba(username) {
+  return "Hello " + username;
 }
+
 console.log(cba(name));

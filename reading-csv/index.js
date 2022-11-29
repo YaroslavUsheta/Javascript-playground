@@ -1,14 +1,51 @@
 import { open } from "node:fs/promises";
+// const importedObject = require("./parsing.js");
 
-const file = await open("./users.csv");
+/**
+ * Reads a given filename (if it exists) and returns array of file lines.
+ */
+async function csvToArray(filename) {
+  const file = await open(filename);
+  const fileContent = await file.readFile({ encoding: "utf8" });
+  // line separator on Windows is "\r\n", but it is "\n" on Linux and macOS.
+  const lines = fileContent.split("\r\n");
+  return lines;
+}
 
-const fileContent = await file.readFile({ encoding: "utf8" });
+const title = "Running wild";
+const author = "John Smith";
 
-const lines = fileContent.split("\n");
+const book = {
+  title,
+  author,
+};
+
+console.log(book);
+
+function lineToUser(line) {
+  const columns = line.split(",");
+  const firstName = columns[1];
+  const lastName = columns[2];
+  return {
+    firstName,
+    lastName,
+  };
+}
+
+// Things to remember
+// Promises and async/await.
+// Node modules and module.exports (splitting your program into multiple files)
+
+const lines = await csvToArray("./users.csv");
+
+console.log("Lines", lines);
+console.log("2nd line", lines[1]);
+console.log("3d user", lineToUser(lines[3]));
+const users = [];
+
+process.exit();
 
 //const id = 2;
-
-//const users = [];
 
 // for loop that populates the array
 let i = 2;
