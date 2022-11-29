@@ -12,23 +12,25 @@ async function csvToArray(filename) {
   return lines;
 }
 
-const title = "Running wild";
+/*const title = "Running wild";
 const author = "John Smith";
 
 const book = {
   title,
   author,
 };
-
 console.log(book);
-
+*/
+//add a title(task)
 function lineToUser(line) {
   const columns = line.split(",");
   const firstName = columns[1];
   const lastName = columns[2];
+  const title = columns[3];
   return {
     firstName,
     lastName,
+    title,
   };
 }
 
