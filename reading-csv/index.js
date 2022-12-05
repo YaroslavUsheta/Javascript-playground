@@ -96,3 +96,5 @@ console.log(fileContent);
   ....
  }
 */
+
+// await sqlQuery(userToInsertStatement(user));
