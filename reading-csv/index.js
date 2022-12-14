@@ -31,10 +31,10 @@ function lineToUser(line) {
 // }
 
 /** For now we are going to handle only numbers and strings. */
-function typeOfColumn(lines, columnIndex) {
+/*function typeOfColumn(lines, columnIndex) {
   // start at 1 to skip the header
   for (let i = 1; i < lines.length; i++) {
-    const columns = lines[i].split(',');
+    const columns = lines[i].split(",");
     const requestedColumn = columns[columnIndex].trim();
     // try to convert into the number
     const maybeFloat = parseFloat(requestedColumn);
@@ -49,32 +49,37 @@ function typeOfColumn(lines, columnIndex) {
     }
   }
 }
+*/
+const input = arrayOfUsers[];
+function identifyPerson(lines) 
+const listOfUsers = lines[0]
+const columns = listOfUsers.split(",");
+for (let i = 1; i< length.columns;trim()) {
 
-function identifyTable(lines) {
+  
+  const lines = await csvToArray(filename);
+  //const firstColumnDataType = typeOfColumn(lines, 0);
+}
+console.log (identifyPerson(lines))
+process.exit()
+
+
+
+/**function identifyTable(lines) 
   const header = lines[0];
-  const columns = header.split(','); 
+  const columns = header.split(",");
 
+  for (let i = 1; i < length.columns;trim())
   // trim every element in the array
-  for (let i = 0; i < columns.length; i++) {
-    columns[i] = columns[i].trim();
-  }
 
-  // identify column data types
+  
+
+  /* //identify column data types
   const firstColumnDataType = typeOfColumn(lines, 0);
   console.log("Data type of the filrst column", firstColumnDataType);
+  */
   
-  const output = [
-    {name: "id", type: "int"},
-    {name: "FirstName", type: "varchar(255)"},
-    {name: "LastName", type: "varchar(255)"},
-    {name: "Title", type: "varchar(255)"},
-  ]
 
-  return output;
-}
+//const lines = await csvToArray(filename);
 
-
-
-const lines = await csvToArray(filename);
-
-console.log(identifyTable(lines));
+//console.log(identifyTable(lines));
